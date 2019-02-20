@@ -24,6 +24,7 @@ public class TwilioApplication {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
+
                 Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
                 Message message = Message.creator(new PhoneNumber("+37493195104"),
                         new PhoneNumber("++12565008192"),
