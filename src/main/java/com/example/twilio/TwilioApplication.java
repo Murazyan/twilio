@@ -28,7 +28,6 @@ public class TwilioApplication {
                 Message message = Message.creator(new PhoneNumber("+37493195104"),
                         new PhoneNumber("++12565008192"),
                         "Barev Lilit jan").create();
-
                 System.out.println(message.getSid());
             }
         };
